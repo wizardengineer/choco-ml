@@ -1,13 +1,14 @@
-type record = { lang: str, time: int};
+# How our record will look like
+type Record = { lang: str, time: int};
 
 # implement methods for the record
-from record def |>
+from Record def |>
     def method(s: int, i: int ) -> int = 
         s + i
 
 # how functions will be constructed
 def foofoo() -> list =
-    let value = record {lang: "choco", time: 2 }
+    let value = Record {lang: "choco", time: 2 }
     let x =
         if value.time == 2:
             4+4
@@ -23,3 +24,4 @@ def foofoo() -> list =
 
     # how arrays would most likely look like
     [1,2,3,4]
+
