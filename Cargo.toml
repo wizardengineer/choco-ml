@@ -1,0 +1,28 @@
+[package]
+name = "chocoml-compiler"
+version = "0.1.0"
+edition = "2024"
+
+[workspace]
+default-run = "cli"
+members = [
+    "frontend",
+    "ir",
+    "passes",
+    "riscv-backend",
+    "cli",
+]
+
+[[bin]]
+name = "cli"
+path = "cli/src/main.rs"
+
+[dependencies]
+frontend = { path = "frontend" }
+ir       = { path = "ir" }
+passes = { path = "passes" }
+riscv-backend = { path = "riscv-backend" }
+
+[workspace.dependencies]
+anyhow     = "1.0"
+
