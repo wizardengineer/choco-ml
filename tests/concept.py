@@ -1,16 +1,20 @@
-type Record = { lang: int, name: str, };
+type record = { lang: str, time: int};
 
-# Implement methods for the Record
-from Record def |>
+# implement methods for the record
+from record def |>
     def method(s: int, i: int ) -> int = 
         s + i
 
-# How functions will be constructed
+# how functions will be constructed
 def foofoo() -> list =
-    let value = Record {lang: 12, name: "juju"}
+    let value = record {lang: "choco", time: 2 }
     let x =
-        if
-    # Comment
+        if value.time == 2:
+            4+4
+        else:
+            0
+
+    # comment
     match i with 
         | 1 -> something()
         | 2 -> value
