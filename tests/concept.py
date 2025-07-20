@@ -1,10 +1,12 @@
 # How our record will look like
-type Record = { lang: str, time: int};
+type Record = { lang: str, time: int}
 
 # implement methods for the record
 from Record def |>
     def method(s: int, i: int ) -> int = 
-        s + i
+        return s + i
+
+def test() -> None = print("something")
 
 # how functions will be constructed
 def foofoo() -> list =
@@ -23,5 +25,7 @@ def foofoo() -> list =
         | _ -> 0 
 
     # how arrays would most likely look like
-    [1,2,3,4]
+    array = [1,2,3,4] 
+
+    return array 
 
