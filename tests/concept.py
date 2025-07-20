@@ -3,7 +3,7 @@ type Record = { lang: str, time: int}
 
 # implement methods for the record
 from Record def |>
-    def method(s: int, i: int ) -> int = 
+    def method(s: int, i: int) -> int = 
         return s + i
 
 def test() -> None = print("something")
@@ -17,12 +17,17 @@ def foofoo() -> list =
         else:
             0
 
+    let x = 0
+    let j = 1
+    if x not j:
+        return [j, x]
+
     # comment
     match i with 
         | 1 -> something()
         | 2 -> value
-        | 2 -> 100
-        | _ -> 0 
+        | 2 -> [1,2] 
+        | _ -> [0] 
 
     # how arrays would most likely look like
     array = [1,2,3,4] 

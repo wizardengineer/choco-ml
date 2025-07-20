@@ -20,9 +20,10 @@ path = "cli/src/main.rs"
 [dependencies]
 frontend = { path = "frontend" }
 ir       = { path = "ir" }
+log = "0.4.27"
 passes = { path = "passes" }
 riscv-backend = { path = "riscv-backend" }
 
 [workspace.dependencies]
 anyhow     = "1.0"
-
+thiserror = "2.0.12"
