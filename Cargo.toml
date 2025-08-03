@@ -23,6 +23,7 @@ ir       = { path = "ir" }
 log = "0.4.27"
 passes = { path = "passes" }
 riscv-backend = { path = "riscv-backend" }
+anyhow.workspace = true
 
 [workspace.dependencies]
 anyhow     = "1.0"

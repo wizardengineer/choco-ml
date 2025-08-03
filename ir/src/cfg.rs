@@ -272,6 +272,7 @@ pub fn collect_defs(func: &IrFunction) -> HashMap<String, Vec<BlockID>> {
 
 //TODO: Need to fix this for working with our frontend
 struct TmpTodo {}
+
 /// Converting Flat Functions into CFG
 fn convert_to_cfg(func: &TmpTodo) -> Result<IrFunction> {
     let mut ir_func = IrFunction::new(&"todo");

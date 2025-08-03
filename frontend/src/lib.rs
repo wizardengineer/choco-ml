@@ -1,11 +1,5 @@
-mod lexer;
-mod parser;
-mod semantic;
+pub mod lexer;
+pub mod parser;
+pub mod semantic;
 
-#[cfg(test)]
-mod tests {
-    use super::*;
-
-    #[test]
-    fn test() {}
-}
+pub use lexer::*;
